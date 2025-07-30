@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu-Jaypee Cafe Light</title>
+
+  <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <span id="userName" style="display: none;"></span>
+    <div class="logo">
+      <a href="menu.html">
+        <img src="https://gyaanarth.com/wp-content/uploads/2022/07/logo-1-1.png" alt="">
+        Jaypee Cafe Lite
+      </a>
+    </div>
+    <div class="options">
+      <a href="login.html">
+        <img src="icons8-user-32.png" alt="" style="height:3vh ; width:1.5vw; margin-right:5px;">
+        Sign in</a>
+      <a href="order.html">Your Orders</a>
+
+      <a href="cart.html" style="height: 8vh;width:10vw; display:flex;">
+    <img src="https://img.freepik.com/premium-vector/shopping-cart-logo-icon-design_19104-1018.jpg" alt=""
+      style="width:4vw ;height:6vh;margin-right: 5px;border-radius: 50px;">
+    Your Cart</a>
+
+
+    </div>
+  </div>
+  <div id="main">
+    <div class="strip">
+    </div>
+    <h1>Jaypee Cafe Lite...</h1>
+
+
+    <div class="search-container">
+      <input type="text" class="search-box" placeholder="Search menu items...">
+    </div>
+
+
+    <div class="image-grid">
+      <div class="button-container">
+        <a href="#beverages">
+          <button class="btn">
+            <div class="card">
+              <img
+                src="https://colombiancoffee.us/cdn/shop/articles/tips-to-recognize-good-quality-coffee-424970.png?v=1713377616&width=1024"
+                alt="Beverage">
+              <div class="card-title">Beverages</div>
+            </div>
+          </button>
+        </a>
+        <a href="#snacks">
+          <button class="btn">
+            <div class="card">
+              <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2021/01/Spring-Roll-Recipe.jpg" alt="Snacks">
+              <div class="card-title">Snacks</div>
+            </div>
+          </button>
+        </a>
+        <a href="#meals">
+          <button class="btn">
+            <div class="card">
+              <img src="https://static.toiimg.com/photo/53109843.cms" alt="Meals">
+              <div class="card-title">Meals</div>
+            </div>
+          </button>
+        </a>
+      </div>
+    </div>
+    <br>
+
+<h2>Dish of the Day</h2>
+<div id="featured-cards" class="best-sellers"></div>
+
+    <h2 style="margin-top: 40px;">Best Sellers</h2>
+    <div class="best-sellers">
+      <div class="menu-card" data-name="Tea">
+        <img src="https://carameltintedlife.com/wp-content/uploads/2021/01/Masala-Chai-.jpg" alt="Tea">
+        <div class="item-name">Tea</div>
+        <div class="item-price">₹10</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Aaloo Parantha">
+        <img src="https://shivanilovesfood.com/wp-content/uploads/2024/03/Aloo-Paratha-14.jpg" alt="Aaloo Prantha">
+        <div class="item-name">Aaloo Parantha</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Chole Bhature">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/015/933/617/non_2x/chole-bhature-is-a-north-indian-food-dish-a-combination-of-chana-masala-and-bhatura-or-puri-free-photo.jpg"
+          alt="Chole Bhature">
+        <div class="item-name">Chole Bhature</div>
+        <div class="item-price">₹90</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Cold Coffee">
+        <img src="https://img.freepik.com/premium-photo/iced-coffee-plastic-cup_136375-18.jpg?w=2000" alt="Cold coffee">
+        <div class="item-name">Cold Coffee</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Samosa">
+        <img src="https://th.bing.com/th/id/OIP.5Qj_W8gjLxQRSPx2HN6tvQHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Samosa">
+        <div class="item-name">Samosa</div>
+        <div class="item-price">₹10</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Coffee">
+        <img src="https://wallpapers.com/images/hd/milk-and-coffee-1680-x-1050-wallpaper-rg9d935ot1ljb923.jpg"
+          alt="Coffee">
+        <div class="item-name">Coffee</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Noodles">
+        <img
+          src="https://i1.wp.com/modernmealmakeover.com/wp-content/uploads/2020/05/thai-noodles-11-3.jpg?fit=1200,1200&ssl=1"
+          alt="Noodles">
+        <div class="item-name">Noodles</div>
+        <div class="item-price">₹55</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Red Sauce Pasta">
+        <img src="https://th.bing.com/th/id/OIP.kraZIajL8eQ7ptZJF7D2mAHaJQ?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Red Sause Pasta">
+        <div class="item-name">Red Sause Pasta</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Matar Kulcha">
+        <img src="https://enjoyinfourseason.com/wp-content/uploads/2022/05/Fourseason-ALOO-MATAR-KULCHA.jpg"
+          alt="Matar Kulcha">
+        <div class="item-name">Matar Kulcha</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Bread Pakoda">
+        <img src="https://th.bing.com/th/id/OIP.NN1DwiWrduWPDfBxzrZevAHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Bread Pakoda">
+        <div class="item-name">Bread Pakoda</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Paneer Patties">
+        <img
+          src="https://defencebakery.in/cdn/shop/files/Paneer_patties_43b67fd3-3cbc-4ddb-95bd-ef1ca3101c7d.jpg?v=1722671107"
+          alt="Panner patties">
+        <div class="item-name">Panner Patties</div>
+        <div class="item-price">₹45</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Papdi Chaat">
+        <img src="https://th.bing.com/th/id/OIP.PBcoQzuPLHJ8DxDL6i1jvgHaE7?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Papdi Chaat">
+        <div class="item-name">Papdi Chaat</div>
+        <div class="item-price">₹70</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <br>
+    <h2 style="margin-top: 40px" ; id="beverages">Beverages</h2>
+    <div class="beverages">
+      <div class="menu-card" data-name="Tea">
+        <img src="https://carameltintedlife.com/wp-content/uploads/2021/01/Masala-Chai-.jpg" alt="Tea">
+        <div class="item-name">Tea</div>
+        <div class="item-price">₹10</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Coffee">
+        <img src="https://wallpapers.com/images/hd/milk-and-coffee-1680-x-1050-wallpaper-rg9d935ot1ljb923.jpg"
+          alt="Coffee">
+        <div class="item-name">Coffee</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Cold Coffee">
+        <img src="https://img.freepik.com/premium-photo/iced-coffee-plastic-cup_136375-18.jpg?w=2000" alt="Cold coffee">
+        <div class="item-name">Cold Coffee</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Sprite">
+        <img src="https://growstar.in/wp-content/uploads/2022/04/Sprite-Lemonade-14400-ml-SDL127529583-1-89807.jpg"
+          alt="Sprite">
+        <div class="item-name">Sprite</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Coke">
+        <img
+          src="https://i5.walmartimages.com/seo/Coca-Cola-20-oz-Bottles-Pack-of-10_cb4c9f0b-a402-4b63-afb9-efdbdfd72450.450d53103f6484ee1ab57a6c8e665ea4.jpeg"
+          alt="Coke">
+        <div class="item-name">Coke</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Fanta">
+        <img src="https://th.bing.com/th/id/OIP.iCaEX6FCaCO_xh4gM8D2vgHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Fanta">
+        <div class="item-name">Fanta</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Mountain Dew">
+        <img
+          src="https://i5.walmartimages.com/asr/3599a244-a5e4-40ad-bbe3-f97f58dd609e_1.0db86e3ef5665165b014f6034e472167.jpeg"
+          alt="Mountain Dew">
+        <div class="item-name">Mountain Dew</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Frooti">
+        <img src="https://th.bing.com/th/id/OIP.pZEvlDi_PMp6wBRm_Tf3zAHaHa?w=500&h=500&rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Frooti">
+        <div class="item-name">Frooti</div>
+        <div class="item-price">₹10</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Appy Fizz">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeDhiuxlNddEU5B71IE4Oj3FB1QmsZXAqHmQ&s"
+          alt="Appy Fizz">
+        <div class="item-name">Appy Fizz</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Masala Chach">
+        <img src="https://www.bigbasket.com/media/uploads/p/xl/30010298_7-mother-dairy-masala-chach.jpg"
+          alt="Masala Chach">
+        <div class="item-name">Masala Chach</div>
+        <div class="item-price">₹15</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Amul Lassi">
+        <img
+          src="https://www.jiomart.com/images/product/original/490001418/amul-lassi-200-ml-tetra-pak-product-images-o490001418-p590041244-0-202212021647.jpg"
+          alt="Amul Lassi">
+        <div class="item-name">Amul Lassi</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <br>
+    <h2 style="margin-top: 40px" ; id="snacks">Snacks</h2>
+
+
+
+    <div class="snacks">
+      <div class="menu-card" data-name="Samosa">
+        <img src="https://th.bing.com/th/id/OIP.5Qj_W8gjLxQRSPx2HN6tvQHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Samosa">
+        <div class="item-name">Samosa</div>
+        <div class="item-price">₹10</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Veg Sandwich">
+        <img src="https://i.ytimg.com/vi/mkrc3qlPqr0/maxresdefault.jpg" alt="Veg Sandwich">
+        <div class="item-name">Veg Sandwich</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Grilled Sandwich">
+        <img src="https://th.bing.com/th/id/OIP.UtUsUgI57BLMuvhxPTTi6gHaJ3?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Grilled Sandwich">
+        <div class="item-name">Grilled Sandwich</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Spring Roll">
+        <img src="https://www.thecookingcollective.com.au/wp-content/uploads/2022/08/Vegetable-Spring-Rolls-2-1.jpg"
+          alt="Spring Roll">
+        <div class="item-name">Spring Roll</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Bhelpuri">
+        <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/11/bhel-puri.jpg" alt="Bhelpuri">
+        <div class="item-name">Bhelpuri</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Aaloo Patties">
+        <img
+          src="https://th.bing.com/th/id/R.9ca00446c686c740009480122f6820ec?rik=auIta09WczP3Fw&riu=http%3a%2f%2fwww.vegandietfood.com%2fwp-content%2fuploads%2f2023%2f09%2fSoya-Puff-Patties-Recipe.jpg&ehk=Fj%2bCMbsTyvJVLNtmhuebYu7D2NZGz3SH45ZIK9TzD44%3d&risl=&pid=ImgRaw&r=0"
+          alt="Aaloo Patties">
+        <div class="item-name">Aaloo Patties</div>
+        <div class="item-price">₹35</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Paneer Patties">
+        <img
+          src="https://defencebakery.in/cdn/shop/files/Paneer_patties_43b67fd3-3cbc-4ddb-95bd-ef1ca3101c7d.jpg?v=1722671107"
+          alt="Panner Patties">
+        <div class="item-name">Paneer Patties</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Tikki Chaat">
+        <img src="https://img.freepik.com/premium-photo/aloo-tikki-chaat-with-yogurt-chutney_198067-99573.jpg?w=2000"
+          alt="Tikki Chaat">
+        <div class="item-name">Tikki Chaat</div>
+        <div class="item-price">₹50</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Papdi Chaat">
+        <img src="https://th.bing.com/th/id/OIP.PBcoQzuPLHJ8DxDL6i1jvgHaE7?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Papdi Chaat">
+        <div class="item-name">Papdi Chaat</div>
+        <div class="item-price">₹60</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Dahi Bhalla">
+        <img
+          src="https://img.freepik.com/premium-photo/dahi-vada-bhalla-is-type-chaat-originating-from-indian-popular-south-asia_466689-1380.jpg?w=2000"
+          alt="Dahi Bhalla">
+        <div class="item-name">Dahi Bhalla</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Vada Pav">
+        <img src="https://th.bing.com/th/id/OIP.DNxwrECi6nlQ1iF4WjrkkAHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Vada Pav">
+        <div class="item-name">Vada Pav</div>
+        <div class="item-price">₹45</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Fries">
+        <img src="https://mazaidarhaleemusa.com/wp-content/uploads/2023/01/French-Fries.png" alt="Fries">
+        <div class="item-name">Fries</div>
+        <div class="item-price">₹45</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Burger">
+        <img src="https://images3.alphacoders.com/276/276647.jpg" alt="Burger">
+        <div class="item-name">Burger</div>
+        <div class="item-price">₹50</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Pizza">
+        <img
+          src="https://th.bing.com/th/id/R.2701268a6712eb622d0098b7c582f9df?rik=3jlYXXWa9Lr2Vw&riu=http%3a%2f%2fpicz.in%2fdata%2fmedia%2f8%2ffood-pizza_00255779.jpg&ehk=EzyxppWl0vMDXL992yk99qbD89hw5BC8o84E0jLGM9c%3d&risl=&pid=ImgRaw&r=0"
+          alt="Pizza">
+        <div class="item-name">Pizza</div>
+        <div class="item-price">₹75</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Momos">
+        <img src="https://th.bing.com/th/id/OIP.pmq-c5sGoFgXAQV5pXfoKgAAAA?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Momos">
+        <div class="item-name">Momos</div>
+        <div class="item-price">₹70</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Red Sauce Pasta">
+        <img src="https://th.bing.com/th/id/OIP.kraZIajL8eQ7ptZJF7D2mAHaJQ?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Red Sauce Pasta">
+        <div class="item-name">Red Sauce Pasta</div>
+        <div class="item-price">₹60</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Noodles">
+        <img
+          src="https://i1.wp.com/modernmealmakeover.com/wp-content/uploads/2020/05/thai-noodles-11-3.jpg?fit=1200,1200&ssl=1"
+          alt="Noodles">
+        <div class="item-name">Noodles</div>
+        <div class="item-price">₹55</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Bread Roll">
+        <img
+          src="https://foodalltime.com/wp-content/uploads/2022/10/Stuffed-Surti-Bhusu-Sev-Bread-Rolls-Without-Potatoes-1.png"
+          alt="Bread Roll">
+        <div class="item-name">Bread Roll</div>
+        <div class="item-price">₹30</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Bread Pakora">
+        <img src="https://th.bing.com/th/id/OIP.NN1DwiWrduWPDfBxzrZevAHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Bread Pakora">
+        <div class="item-name">Bread Pakora</div>
+        <div class="item-price">₹40</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Paneer Roll">
+        <img src="https://spicecravings.com/wp-content/uploads/2020/12/Paneer-kathi-Roll-Featured-1.jpg"
+          alt="Paneer Roll">
+        <div class="item-name">Paneer Roll</div>
+        <div class="item-price">₹45</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Boiled Eggs">
+        <img src="https://th.bing.com/th/id/OIP.0kZk-SwVTfYpGlxZ1kTW1AHaE7?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Boiled Eggs">
+        <div class="item-name">Boiled Eggs</div>
+        <div class="item-price">₹35</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Egg Roll">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWq2E8MSBW03UqDeNdliBejBKm2kuM2Mdveg&s"
+          alt="Egg Roll">
+        <div class="item-name">Egg Roll</div>
+        <div class="item-price">₹55</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Bread Omlette">
+        <img src="https://www.kannammacooks.com/wp-content/uploads/bread-omelette-recipe-1-6.jpg" alt="Bread Omlette">
+        <div class="item-name">Bread Omlette</div>
+        <div class="item-price">₹45</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <br>
+
+
+    <div class="chips">
+      <div class="menu-card" data-name="Kurkure">
+        <img src="https://th.bing.com/th/id/OIP.Y7-1sNaRvaotBUdFFZLuZwHaHa?w=800&h=800&rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Kurkure">
+        <div class="item-name">Kurkure</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Lays Classic">
+        <img src="https://images.heb.com/is/image/HEBGrocery/001865742" alt="Lays Classic">
+        <div class="item-name">Lays Classic</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Lays Chilli lemon">
+        <img
+          src="https://tiimg.tistatic.com/fp/1/007/474/crisply-and-crunchhy-spicy-flavor-chile-limonlays-potato-chips-52-g-pouch-688.jpg"
+          alt="Lays chilli lemon">
+        <div class="item-name">Lays Chilli Lemon</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Puffcorn">
+        <img src="https://th.bing.com/th/id/OIP.5L6Pw9uvee9JXyc2NX87WwHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Puffcorn">
+        <div class="item-name">Puffcorn</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Lays Hot & Sweet Chilli">
+        <img
+          src="https://th.bing.com/th/id/R.581c7fee0e562abf16b43abec5ca36d0?rik=eDC%2beNgjZ8bY1Q&riu=http%3a%2f%2fkairaliinternational.com%2fcdn%2fshop%2fproducts%2flaysorange_grande.png%3fv%3d1661169400&ehk=bmsq8QWWDfDg%2fryynHwOhkXmOrxHd1evGcMWExBzx2A%3d&risl=&pid=ImgRaw&r=0"
+          alt="Lays Hot & Sweet Chilli">
+        <div class="item-name">Lays Hot & Sweet Chilli</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="menu-card" data-name="Lays Cream & Onion">
+        <img src="https://th.bing.com/th/id/OIP.V3ISsEbyLmaMHsNq21StCwHaHa?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Lays Cream & Onion">
+        <div class="item-name">Lays Cream & Onion</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Lays Tomato">
+        <img src="https://th.bing.com/th/id/OIP.0H6SvsWMEV01go1RqoYxNwHaG8?rs=1&pid=ImgDetMain&cb=idpwebpc2"
+          alt="Lays Tomato">
+        <div class="item-name">Lays Tomato</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Lays Magic Masala">
+        <img
+          src="https://th.bing.com/th/id/R.1a0e26e2630900dd6de72565e625c789?rik=cPxGpvZcmdaG2w&riu=http%3a%2f%2fstarmart.com.hk%2fwp-content%2fuploads%2f2020%2f11%2fLays-Blue-Magic-Masala-52-GM.jpg&ehk=jqArgdXYJs8wmNoVDc2Oc9e6HQuLSEH5ieXxFvNn9Ng%3d&risl=&pid=ImgRaw&r=0"
+          alt="Lays Magic Masala">
+        <div class="item-name">Lays Magic Masala</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Little Hearts">
+        <img
+          src="https://i5.walmartimages.com/asr/e241c7a5-6a61-4acb-a067-b64472e0ad64.f4a49a5a501582b3c45fe19be0fccfa1.jpeg"
+          alt="Little Hearts">
+        <div class="item-name">Little Hearts</div>
+        <div class="item-price">₹20</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <br>
+    <h2 style="margin-top: 40px" ; id="meals">Meals</h2>
+    <div class="meals">
+      <div class="menu-card" data-name="Chole Bhature">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/015/933/617/non_2x/chole-bhature-is-a-north-indian-food-dish-a-combination-of-chana-masala-and-bhatura-or-puri-free-photo.jpg"
+          alt="Chole Bhature">
+        <div class="item-name">Chole Bhature</div>
+        <div class="item-price">₹90</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Matar Kulcha">
+        <img src="https://enjoyinfourseason.com/wp-content/uploads/2022/05/Fourseason-ALOO-MATAR-KULCHA.jpg"
+          alt="Matar Kulcha">
+        <div class="item-name">Matar Kulcha</div>
+        <div class="item-price">₹70</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Aaloo Parantha">
+        <img src="https://foodiewish.com/wp-content/uploads/2020/04/Aloo-Pyaz-Paratha-Recipe-768x512.jpg"
+          alt="Aaloo Prantha">
+        <div class="item-name">Aaloo Parantha</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Paneer Parantha">
+        <img src="https://traditionallymodernfood.com/wp-content/uploads/2021/05/paneer-paratha.jpeg"
+          alt="Panneer Prantha">
+        <div class="item-name">Panneer Parantha</div>
+        <div class="item-price">₹100</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Dosa">
+        <img src="https://i.pinimg.com/originals/99/40/72/9940727be218793f5de3450a6cc9cd14.jpg" alt="Dosa">
+        <div class="item-name">Dosa</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Sambar Vada">
+        <img src="https://static.vecteezy.com/system/resources/previews/015/933/677/large_2x/sambar-vada-or-medu-vadai-with-sambhar-and-chutney-popular-south-indian-snack-or-breakfast-free-photo.jpg" alt="Sambar Vada">
+        <div class="item-name">Sambar Vada</div>
+        <div class="item-price">₹90</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Dal Makhni naan">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAYfrQ59uGZTOiv33Is5KLPIA6ixqKlRCSA&s"
+          alt="Dal Makhni Naan">
+        <div class="item-name">Dal Makhni Naan</div>
+        <div class="item-price">₹80</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="menu-card" data-name="Rajma Rice">
+        <img src="https://aartimadan.com/wp-content/uploads/2021/03/Rajma-Chawal.jpg" alt="Rajma Rice">
+        <div class="item-name">Rajma Rice</div>
+        <div class="item-price">₹70</div>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- <div id="loginPanel" class="login-slide"> <span class="close-login" onclick="closeLogin()">×</span>
+    <h2 style="margin-top: 40px;">Login</h2> <input type="tel" placeholder="Phone number" class="login-input">
+    <br>
+    <br>
+    <button class="login-btn">Login</button>
+    <p style="margin-top: 10px;">Don’t have an account? <a href="signup.html">Sign up</a></p>
+  </div> -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h2>About Us</h2>
+        <p>We serve the best food and drinks at affordable prices.</p>
+        <br>
+        <br>
+         <p>&copy; 2025 Jaypee Cafe. All rights reserved.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <br>
+        <ul>
+          <li><a href="cver.html">Home Page</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="orders.html">Order</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <br>
+        <div class="social-icons">
+          Instagram<br>
+          Facebook<br>
+          Twitter
+        </div>
+      </div>
+    </div>
+
+   
+  </footer>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

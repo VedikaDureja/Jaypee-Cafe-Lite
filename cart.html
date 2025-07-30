@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - Jaypee Cafe Lite</title>
+  <style>
+    /* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #b20000;
+  margin-bottom: 30px;
+}
+
+/* Cart Container */
+#cart-container {
+  padding: 10px;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cart-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+}
+
+.qty-btns button {
+  background-color: #008cba;
+  color: white;
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background-color: darkred;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .cart-wrapper {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .cart-footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="cart-wrapper">
+    <h1>🛒 Your Cart</h1>
+
+    <div id="cart-container">
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <h2>Total: ₹<span id="cart-total">0</span></h2>
+        <button onclick="clearCart()" class="btn">Clear Cart</button>
+        <button onclick="placeOrder()" class="btn">Place Order</button>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="cart.js"></script>
+</body>
+</html>

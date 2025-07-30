@@ -1,0 +1,437 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #3e3a3a;
+  color: #0c0b0b;
+  /* text-align: center; */
+}
+
+.navbar {
+  height: 8vh;
+  width:100%;
+  background-color: white;
+  position:fixed;
+  display: flex;
+}
+
+.strip{
+  height: 8vh;
+  width:100%;
+  background-color: white;
+}
+
+.logo a{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  text-decoration: none;
+  margin-right: 800px;
+}
+
+
+
+.logo img{
+  width: 5vw;
+  height:8vh;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.options{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.options a {
+  height:7vh;
+  width:8vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  color:black;
+  border-radius: 80px;
+  transition: background-color 0.5s;
+}
+
+.options a:hover{
+  background-color: rgba(251, 74, 74, 0.841);
+  border-radius: 80px;
+}
+
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.8rem;
+  color: white;
+  text-align: center;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+h2 {
+  /* background-color: rgb(28, 26, 26); */
+  color: rgb(254, 251, 251);
+  padding: 12px 20px;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: left;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.cart-btn {
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: red;
+  color: rgb(252, 235, 235);
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-btn:hover {
+  background-color: rgb(104, 8, 8);
+}
+
+.btn {
+  background-color: #1f1d1e;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(145, 24, 24);
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.search-container {
+  margin-top: 20px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  padding: 14px 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+ 
+}
+
+.card {
+  width: 150px;
+  text-align: center;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.card-title {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.best-sellers {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  margin: 0 20px;
+}
+
+.menu-card {
+  min-width: 120px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.menu-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.item-price {
+  color: red;
+  margin-top: 4px;
+}
+
+.beverages {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.snacks {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.chips {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  white-space: nowrap;
+
+}
+
+.meals {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+body {
+  background-image: url('https://img.freepik.com/premium-photo/cutlery-black-stone-table-with-vegetables-spices-food-background-top-view-rustic-style_187166-31548.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fades image (darker = higher number) */
+  z-index: -1;
+}
+
+.login-slide {
+position: fixed;
+top: 0;
+right: -100%;
+width: 300px;
+height: 100%;
+background-color: white;
+padding: 20px;
+box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+z-index: 9999;
+transition: right 0.4s ease;
+}
+
+.login-slide.open {
+right: 0;
+}
+
+.close-login {
+position: absolute;
+top: 15px;
+right: 20px;
+font-size: 24px;
+color: red;
+cursor: pointer;
+}
+
+.login-input {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+border: 1px solid gray;
+border-radius: 5px;
+}
+
+.login-btn {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+background-color: red;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.login-btn:hover {
+background-color: darkred;
+}
+
+.footer-content{
+  display:flex;
+}
+
+.site-footer{
+  background-color: rgb(42, 42, 42);
+  color: white;
+  /* text-align: center; */
+  display:flex;
+}
+
+.footer-column{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right:70px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .logo a {
+    margin: 0;
+    font-size: 1.2rem;
+    justify-content: flex-start;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .options a {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 8px 10px;
+  }
+
+  .search-box {
+    width: 90%;
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+
+  .image-grid,
+  .button-container,
+  .best-sellers,
+  .beverages,
+  .snacks,
+  .meals,
+  .chips {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .menu-card {
+    min-width: 140px;
+    max-width: 44%;
+    margin: 10px auto;
+    font-size: 0.9rem;
+  }
+
+  .menu-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .btn, .cart-btn {
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

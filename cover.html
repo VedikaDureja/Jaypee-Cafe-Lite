@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaypee Cafe Lite</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .cover {
+      position: relative;
+      height: 100vh;
+      background-image: url('https://t3.ftcdn.net/jpg/02/64/00/56/360_F_264005624_NyFEBO7k0OsNMQiI343zBZZ7WH89f6Ls.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.582); 
+      z-index: 1;
+    }
+
+    .text {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-align: center;
+    }
+
+    .text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .text p {
+      font-size: 1.5rem;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .text a{
+      text-decoration: none;
+    }
+    
+    .btn{
+        margin-top: 30px;
+        text-decoration: none;
+        position:relative;
+        z-index: 2;
+        background-color: red;
+        color:white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+
+    .btn:hover{
+        background-color: rgb(101, 3, 3);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="text">
+      <h1>JAYPEE CAFE LITE</h1>
+      <p>Order online and skip the line!</p>
+    <a href= "menu.html">
+    <div class="btn">
+        <p>ORDER NOW</p>
+    </div>
+  </a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 30px;
+        }
+
+        h3 a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .box {
+            height: 50px;
+            width: 300px;
+            border-color: rgb(200, 198, 198);
+            border-radius: 20px;
+            padding: 20px;
+
+        }
+
+        .btn {
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            height: 55px;
+            width: 175px;
+            color: white;
+            background-color: red;
+            border-color: red;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(211, 4, 4);
+            border-color: rgb(211, 4, 4);
+        }
+    </style>
+    <script type="module" src="login.js" defer></script>
+</head>
+
+<body>
+    <h1>Log in</h1>
+    <h3>or
+        <a href="signup.html"> create an account</a>
+    </h3>
+    <br>
+    <br>
+    <form action="">
+
+        <label for="name"></label>
+        <input class="box" type="text" name="email" placeholder="Enter Your email" id="email" required>
+        <br>
+        <br>
+        <label for="password"></label>
+        <input class="box" type="password" placeholder="Enter your password" id="password" required>
+        <br>
+        <br>
+        <button class="btn" type="submit">LOGIN</button>
+
+    </form>
+
+
+</body>
+
+</html>

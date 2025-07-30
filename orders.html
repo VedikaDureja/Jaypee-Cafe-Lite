@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Orders</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    .order-box {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #b20000;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Orders</h1>
+  <div id="order-container">Loading...</div>
+
+  <script type="module">
+    import { initializeApp, getApps } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+    import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBvVOiZ9brgYkEmI8tJzHAPWSezRcQiJEU",
+      authDomain: "login-example-364d8.firebaseapp.com",
+      projectId: "login-example-364d8",
+      storageBucket: "login-example-364d8.firebasestorage.app",
+      messagingSenderId: "775673848703",
+      appId: "1:775673848703:web:c62995c0e404e77611704a"
+    };
+
+    if (!getApps().length) {
+      initializeApp(firebaseConfig);
+    }
+
+    const auth = getAuth();
+    const db = getFirestore();
+
+    const orderContainer = document.getElementById("order-container");
+
+    onAuthStateChanged(auth, async (user) => {
+      if (!user) {
+        orderContainer.innerHTML = "<p>Please log in to view your orders.</p>";
+        return;
+      }
+
+      const q = query(collection(db, "orders"), where("userId", "==", user.uid));
+      const querySnapshot = await getDocs(q);
+
+      if (querySnapshot.empty) {
+        orderContainer.innerHTML = "<p>You have no orders.</p>";
+        return;
+      }
+
+      orderContainer.innerHTML = "";
+
+      querySnapshot.forEach(docSnap => {
+        const data = docSnap.data();
+        const box = document.createElement("div");
+        box.className = "order-box";
+
+        let itemList = "<ul>";
+        for (const [item, details] of Object.entries(data.items)) {
+          itemList += `<li>${item} — ₹${details.price} × ${details.quantity}</li>`;
+        }
+        itemList += "</ul>";
+
+        box.innerHTML = `
+          <h2>Order on ${new Date(data.timestamp).toLocaleString()}</h2>
+          ${itemList}
+          <strong>Total: ₹${data.total}</strong>
+        `;
+
+        orderContainer.appendChild(box);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 30px;
+    }
+
+    h3 a {
+      text-decoration: none;
+      color: red;
+    }
+
+    .box {
+      height: 50px;
+      width: 300px;
+      border-color: rgb(200, 198, 198);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      font-size: larger;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      height: 55px;
+      width: 175px;
+      color: white;
+      background-color: red;
+      border-color: red;
+      border-radius: 50px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: rgb(211, 4, 4);
+      border-color: rgb(211, 4, 4);
+    }
+
+    .messageDiv{
+      background-color: rgb(251, 93, 93);
+      color:white;
+      padding:10px 20px;
+      margin:10px;
+      border-radius:5px;
+      font-size:1rem;
+      opacity:0;
+      animation:fadeout 7s forwards;
+    }
+  </style>
+  <script type="module" src="register.js" defer></script>
+</head>
+
+<body>
+  <h1>Sign Up</h1>
+  <h3>or
+    <a href="login.html"> login to your account</a>
+  </h3>
+  <br>
+  <br>
+  <form method="post" action="">
+  <div id = "signUpmessage" class="messageDiv" style="display:none;"></div>
+     <label for="name"></label>
+    <input class="box" type="text" name="name" placeholder="Enter Your Name" id="name" required>
+    <br>
+    <label for="email"></label>
+    <input class="box" type="text" name="email" placeholder="Enter Your email" id="email" required>
+    <br>
+    <label for="password"></label>
+    <input class="box" type="password" placeholder="Enter your password" id="password" required>
+    <br>
+    <button class="btn" id="submit" type="submit">Create Account</button>
+
+  </form>
+  <!-- <script type="module" src="register.js" defer></script> -->
+</body>
+
+</html>
